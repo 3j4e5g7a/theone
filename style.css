@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 100;
+    src: url(Font/Nohemi/Nohemi-Thin.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 200;
+    src: url(Font/Nohemi/Nohemi-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 300;
+    src: url(Font/Nohemi/Nohemi-Light.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 400;
+    src: url(Font/Nohemi/Nohemi-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 500;
+    src: url(Font/Nohemi/Nohemi-Medium.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 600;
+    src: url(Font/Nohemi/Nohemi-SemiBold.ttf)
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 700;
+    src: url(Font/noyh-r/NoyhR-Bold.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 800;
+    src: url(Font/Nohemi/Nohemi-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Nohemi';
+    font-weight: 900;
+    src: url(Font/Nohemi/Nohemi-Black.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+  font-family: 'Nohemi';
+}
+.navbar {
+  background-color: #dbfe01;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: 'Nohemi';
+  color: #000004;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+.name{
+  font-family: 'Nohemi';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.hero {
+  background-color: #dbfe01;
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.main-heading {
+  text-transform: uppercase;
+  font-family: 'Nohemi';
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 120px;
+}
+
+.rt-container{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lp-video{
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  bottom: 20px;
+  width: 80%;
+  height: 130px;
+}
+
+.lp-video video{
+  height: 170%;
+  width: 100%;
+}
+
+.subheading {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Nohemi';
+  font-size: 1rem;
+}
+
+.badges {
+  font-family: 'Nohemi';
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.badge {
+  font-family: 'Nohemi';
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+/* Hero Image */
+.hero-image {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+    position: relative;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.hero-image img {
+  object-fit: cover;
+    width: 60%;
+}
+
+.arrow-circle {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: #000;
+  color: #dbfe01;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-circle svg{
+  width: 50px;
+}
+
+.about-section{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  height: 87vh;
+  background-color: #000004;
+}
+
+.about-text{
+  position: relative;
+  width: auto;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.about-text span {
+  padding-top: 40px;
+  font-family: 'Nohemi';
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.about-text-content{
+  color: white;
+}
+.dot{
+  color: #dbfe01;
+}
+
+.about-content{
+  position: relative;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  border-radius: 40px;
+  background-color: #292928;
+}
+
+.about-content p{
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Nohemi';
+  font-size: 33px;
+  font-weight: 200;
+  color: #dbfe01;
+}
+
+.img {
+  overflow: hidden;
+  display: inline-block;
+  width: 7rem;
+  height: 2.5rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin: 0 0.3rem;
+}
+.img video{
+  position: relative;
+    bottom: 20px;
+    width: 120px;
+    height: auto;
+}
+.highlight {
+  height: 50px;
+  display: inline-block;
+  background: #ccff00;
+  color: #000;
+  padding: 0.3rem;
+  border-radius: 50px;
+}
+
+.highlight svg{
+  margin-bottom: 2px;
+  height: auto;
+  width: 40px;
+}
+
+.fst-paragraph{
+  margin-bottom: 20px;
+  height: auto;
+  width: 60%;
+}
+.snd-paragraph{
+  height: auto;
+  width: 60%;
+}
