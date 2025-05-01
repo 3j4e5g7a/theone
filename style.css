@@ -80,6 +80,7 @@
 }
 
 .hero {
+  user-select: none;
   background-color: #dbfe01;
   display: flex;
   padding: 2rem;
@@ -114,7 +115,7 @@
 }
 
 .lp-video{
-  border-radius: 40px;
+  border-radius: 20px;
   position: relative;
   overflow: hidden;
   bottom: 20px;
@@ -195,6 +196,13 @@
   width: -webkit-fill-available;
   height: 87vh;
   background-color: #000004;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-text{
@@ -240,8 +248,8 @@
   line-height: 50px;
   text-align: center;
   font-family: 'Nohemi';
-  font-size: 33px;
-  font-weight: 200;
+  font-size: 30px;
+  font-weight: 400;
   color: #dbfe01;
 }
 
@@ -263,7 +271,7 @@
     height: auto;
 }
 .highlight {
-  height: 50px;
+  height: 40px;
   display: inline-block;
   background: #ccff00;
   color: #000;
@@ -272,7 +280,7 @@
 }
 
 .highlight svg{
-  margin-bottom: 2px;
+  margin-bottom: -7px;
   height: auto;
   width: 40px;
 }
@@ -285,4 +293,220 @@
 .snd-paragraph{
   height: auto;
   width: 60%;
+}
+.Resume-section{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  background-image: linear-gradient(to right, #ffffff, #dbdbdb);
+  font-family: 'Nohemi';
+  max-width: 1366px;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+.intro {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.intro h1 {
+  font-family: 'Nohemi';
+  font-weight: 600;
+  font-size: 100px;
+  color: #000004;
+}
+
+.intro span{
+  margin-left: -20px;
+  padding-top: 40px;
+    font-family: 'Nohemi';
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.Resume-section{
+  background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-radius: 20px;
+}
+
+
+.left-panel{
+  padding: 20px;
+  align-content: space-around;
+  justify-items: center;
+}
+.right-panel {
+  padding: 20px;
+  align-content: space-around;
+  justify-items: center;
+  }
+
+  .profile-photo{
+    width: 480px;
+    justify-items: center;
+    max-width: 430px;
+  }
+  .colorwheel{
+    position: absolute;
+    z-index: -1;
+    display: none;
+  }
+
+  .pfp{
+
+    z-index: 1;
+  }
+
+.profile-photo img {
+  width: 480px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card {
+  width: 300px;
+  color: #000004;
+  background: #ccff00;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-family: 'Nohemi';
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.contact p strong{
+  line-height: 25px;
+  font-family: 'Nohemi';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contact p a{
+  font-weight: 500;
+}
+
+.portfolio-text{
+  margin-bottom: 40px;
+  position: relative;
+  width: auto;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.portfolio-section{
+  background-color: #ccff00;
+  padding: 2rem;
+  height: 90vh;
+  width: auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-text span {
+  padding-top: 40px;
+  font-family: 'Nohemi';
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.portfolio-text-content{
+  color: #000004;
+}
+.dot3{
+  color: #fff;
+}
+
+.portfolio-badges{
+  font-family: 'Nohemi';
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: left;
+    align-items: center;
+}
+
+.portfolio-badges1{
+  text-align: center;
+  border: 2px #000004 solid;
+  border-radius: 40px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.portfolio-badges2{
+  text-align: center;
+  border: 2px #000004 solid;
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.portfolio-badges svg{
+  width: 40px;
+}
+
+.portfolio-badges1 p{
+  width: 150px;
+  font-size: 20px;
+}
+
+.portfolio-badges2 p{
+  width: 200px;
+  font-size: 20px;
 }
