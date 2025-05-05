@@ -198,7 +198,7 @@
   background-color: #000004;
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
 .show {
   opacity: 1;
@@ -297,7 +297,7 @@
 .Resume-section{
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
 .show {
   opacity: 1;
@@ -308,7 +308,7 @@
   background-image: linear-gradient(to right, #ffffff, #dbdbdb);
   font-family: 'Nohemi';
   max-width: 1366px;
-  padding: 2rem 2rem 0rem 2rem;
+  padding: 2rem;
 }
 
 .intro {
@@ -334,7 +334,7 @@
 .Resume-section{
   background-color: #ffffff;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 10px;
     border-radius: 20px;
 }
@@ -368,10 +368,12 @@
   }
 
 .profile-photo img {
-  width: 480px;
+  position: relative;
+  width: 508px;
   height: auto;
   border-radius: 20px;
   object-fit: cover;
+  bottom: -6px;
 }
 
 .card {
@@ -390,17 +392,32 @@
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
+.card p{
+  font-size: 15px;
+  font-weight: 500;
+}
 
 .card ul {
+  display: flex;
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.card ul li {
-  margin-bottom: 8px;
+.experiences{
+  display: flex;
+  flex-direction: column;
 }
 
+.card ul li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.card ul li svg{
+  width: 50px;
+}
 .contact a {
   color: #333;
   text-decoration: none;
@@ -425,88 +442,290 @@
 
 .contact p {
   font-size: 15px;
-  font-weight: 400;
-}
-
-.contact p a{
   font-weight: 500;
 }
 
-.portfolio-text{
-  margin-bottom: 40px;
-  position: relative;
-  width: auto;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-content: center;
-  flex-wrap: nowrap;
+.contact p a{
+  font-size: 15px;
+  font-weight: 500;
 }
 
+.download-btn {
+  text-align: center;
+  font-family: 'Nohemi';
+  display: inline-block;
+  padding: 15px 60px;
+  color: #000004;
+  border: 2px solid #000004;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #fff;
+  color: #000004;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 .portfolio-section{
+  align-content: center;
   background-color: #ccff00;
   padding: 2rem;
-  height: 90vh;
+  height: 50vh;
   width: auto;
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
 .show {
   opacity: 1;
-  transform: translateY(0);
-}
-.portfolio-text span {
-  padding-top: 40px;
-  font-family: 'Nohemi';
-  font-size: 100px;
-  font-weight: 900;
-}
+  transform: translateY(0);}
 
-.portfolio-text-content{
-  color: #000004;
-}
-.dot3{
-  color: #fff;
-}
+  .portfolio-section h1{
+    font-family: 'Nohemi';
+    font-size: 100px;
+    font-weight: 600;
+    text-align: center;
+  }
 
-.portfolio-badges{
-  font-family: 'Nohemi';
-  display: flex;
-    flex-direction: row;
+  .footer{
+    height: 10vh;
+    background-color: #000004;
+  }
+
+  .footer-links{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
     flex-wrap: nowrap;
+    flex-direction: row;
     align-content: center;
-    justify-content: left;
     align-items: center;
+  }
+
+  .footer-links a {
+    font-family: 'Nohemi';
+    color: #ccff00;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 20px;
+  }
+ @media screen and (min-width: 1266px) and (max-width: 1366px) {
+ .lp-video video{
+  height: 140%;
+ }
+
+ .hero-image{
+  height: 50vh;
+ }
+
+ .about-content{
+  height: 30vh;
+ }
+ .about-section{
+  height: 50vh;
+ }
+
+ .about-content p{
+  font-size: 29px;
+ }
+
+ .portfolio-section{
+  height: 35vh;
+ }
+ }
+
+ @media screen and (min-width: 1024px) and (max-width: 1200px){
+  .Resume-section{
+    overflow: hidden;
+  }
+
+  .main-heading{
+    font-size: 100px;
+    line-height: 90px;
+  }
+  .lp-video video {
+    height: 130%;
+  }
+  .hero-image{
+    height: 40vh;
+  }
+
+  .about-section{
+    height: 50vh;
+  }
+  .about-content{
+    height: 30vh;
+  }
+
+  .about-content p{
+    font-size: 22px;
+    line-height:50px;
+  }
+
+  .Resume-section{
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .card{
+    width: 250px;
+  }
+
+  .profile-photo img{
+    width: 310px;
+    height: 400px;
+    bottom: -110px;
+  }
+
+  .card ul li svg {
+    width: 44px;
 }
 
-.portfolio-badges1{
-  text-align: center;
-  border: 2px #000004 solid;
-  border-radius: 40px;
-  padding: 5px;
-  margin-right: 20px;
+.download-btn{
+font-size: 14px;
 }
 
-.portfolio-badges2{
-  text-align: center;
-  border: 2px #000004 solid;
-  border-radius: 40px;
-  padding: 5px;
+.portfolio-section{
+  height: 30vh;
+ }
+
+ .footer-links{
+  padding: 40px;
+ }
+ }
+
+ @media screen and (min-width: 992px) and (max-width: 1023px){
+  .main-heading{
+    font-size: 100px;
+    line-height: 90px;
+  }
+
+  .lp-video{
+    height: 70px;
+  }
+
+  .lp-video video{
+      height: 170px;
+      width: auto;
+  }
+
+  .hero-image{
+    height: 45vh;
+  }
+  .badge{
+    padding: 0.5rem 0.8rem;
+  }
+
+  .about-section{
+    height: 50vh;
+  }
+
+  .about-content{
+    height: 30vh;
+  }
+
+  .about-content p{
+    font-size: 21px;
+    line-height: 42px;
+  }
+
+  .Resume-section{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .card{
+    width: 220px;
+  }
+  .card ul li svg {
+    width: 37px;
+ }
+.profile-photo img {
+  right: 60px;
+  height: 440px;
+  width: auto;
+  bottom: -75px;
+  }
+  .portfolio-section{
+    height: 30vh;
+   }
+  
+   .footer-links{
+    padding: 40px;
+   }
 }
 
-.portfolio-badges svg{
-  width: 40px;
-}
+@media screen and (min-width: 901px) and (max-width: 991px){
+  .main-heading{
+    font-size: 90px;
+    line-height: 80px;
+  }
 
-.portfolio-badges1 p{
-  width: 150px;
-  font-size: 20px;
-}
+  .lp-video{
+    height: 50px;
+  }
 
-.portfolio-badges2 p{
-  width: 200px;
-  font-size: 20px;
+  .lp-video video {
+    height: 280%;
+    width: auto;
+  }
+
+  .subheading{
+    font-size: 12px;
+  }
+  .badges{
+    margin-top: 10px;
+  }
+  .badge{
+    padding: 7px 3px;
+  }
+
+  .hero-image{
+    height: 40vh;
+  }
+
+  .about-section{
+    height: 50vh;
+  }
+  .about-content{
+    height: 30vh;
+  }
+
+  .about-content p{
+    font-size: 19px;
+    line-height: 43px;
+  }
+
+  .Resume-section{
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .card{
+    width: 200px;
+  }
+  .contact p a {
+    font-size: 13px;
+    font-weight: 500;
+ }
+.profile-photo img {
+  right: 60px;
+  height: 440px;
+  width: auto;
+  bottom: -75px;
+  }
+  .card ul li svg {
+    width: 34px;
+  }
+  .portfolio-section{
+    height: 30vh;
+   }
+  
+   .footer-links{
+    padding: 40px;
+   }
 }
