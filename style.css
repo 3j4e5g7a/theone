@@ -339,7 +339,6 @@
     border-radius: 20px;
 }
 
-
 .left-panel{
   padding: 20px;
   align-content: space-around;
@@ -363,7 +362,6 @@
   }
 
   .pfp{
-
     z-index: 1;
   }
 
@@ -431,7 +429,15 @@
   width: 40px;
   height: 40px;
   margin-right: 10px;
+  filter: grayscale(100%) brightness(0.9) contrast(1);
+  transition: filter 0.3s ease;
 }
+
+.social-icons svg:hover{
+  filter: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 .contact p strong{
   line-height: 25px;
@@ -516,216 +522,146 @@
     transition: color 0.3s;
     font-size: 20px;
   }
- @media screen and (min-width: 1266px) and (max-width: 1366px) {
- .lp-video video{
-  height: 140%;
- }
-
- .hero-image{
-  height: 50vh;
- }
-
- .about-content{
-  height: 30vh;
- }
- .about-section{
-  height: 50vh;
- }
-
- .about-content p{
-  font-size: 29px;
- }
-
- .portfolio-section{
-  height: 35vh;
- }
- }
-
- @media screen and (min-width: 1024px) and (max-width: 1200px){
-  .Resume-section{
-    overflow: hidden;
-  }
-
-  .main-heading{
-    font-size: 100px;
-    line-height: 90px;
-  }
-  .lp-video video {
-    height: 130%;
-  }
-  .hero-image{
-    height: 40vh;
-  }
-
-  .about-section{
-    height: 50vh;
-  }
-  .about-content{
-    height: 30vh;
-  }
-
-  .about-content p{
-    font-size: 22px;
-    line-height:50px;
-  }
-
-  .Resume-section{
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  }
-
-  .card{
-    width: 250px;
-  }
-
-  .profile-photo img{
-    width: 310px;
-    height: 400px;
-    bottom: -110px;
-  }
-
-  .card ul li svg {
-    width: 44px;
+ @media (min-width: 300px) and (max-width: 371px){
+.navbar{
+  padding: 1rem;
+  gap: 1rem;
 }
-
+.name{
+  font-size: 12px;
+}
+.nav-links{
+  gap: 0.5rem;
+}
+.nav-links a{
+  font-size: 12px;
+}
+.hero {
+  padding: 1rem;
+}
+.hero-text{
+  padding: 0;
+  flex-direction: column;
+}
+.main-heading{
+  font-size: 50px;
+  line-height: 50px;
+}
+.lp-video {
+  height: 80px;
+}
+.lp-video video {
+    height: 150%;
+  }
+.subheading {
+  text-align: left;
+  font-size: 0.9rem;
+}
+.badges{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.badge{
+   padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+}
+.hero-image{
+  height: 50vh;
+}
+.hero-image img {
+    width: 80%;
+  }
+.arrow-circle{
+  width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+}
+.arrow-circle svg {
+  margin-top: 5px;
+  width: 20px;
+}
+.about-section{
+  height: 90vh;
+  padding: 1rem;
+}
+.about-text span{
+  font-size: 45px;
+}
+.about-content{
+  padding: 1rem;
+  top: 30px;
+}
+.about-content p{
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+.img {
+  display: none;
+}
+.fst-paragraph, .snd-paragraph{
+  width: 100%;
+}
+.highlight{
+  height: 10px;
+  width: 10px;
+}
+.highlight svg {
+  margin-bottom: 3px;
+    height: auto;
+    width: 10px;
+}
+.container{
+  padding: 1rem;
+}
+.intro{
+  margin-bottom: 1rem;
+}
+.intro h1{
+  font-size: 45px;
+}
+.intro span {
+  font-size: 45px;
+  margin-left: -15px;
+}
+.Resume-section{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.left-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.card{
+  width: 200px;
+  padding: 1rem;
+}
+.card ul li svg{
+  width: 32px;
+}
+.profile-photo, .profile-photo img{
+  width: 250px;
+}
+.right-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.contact p a{
+  font-size: 0.7rem;
+    font-weight: 800;
+}
+.social-icons a svg{
+  width: 50px;
+}
 .download-btn{
-font-size: 14px;
+      padding: 10px 20px;
 }
-
 .portfolio-section{
-  height: 30vh;
- }
-
- .footer-links{
-  padding: 40px;
- }
- }
-
- @media screen and (min-width: 992px) and (max-width: 1023px){
-  .main-heading{
-    font-size: 100px;
-    line-height: 90px;
-  }
-
-  .lp-video{
-    height: 70px;
-  }
-
-  .lp-video video{
-      height: 170px;
-      width: auto;
-  }
-
-  .hero-image{
-    height: 45vh;
-  }
-  .badge{
-    padding: 0.5rem 0.8rem;
-  }
-
-  .about-section{
-    height: 50vh;
-  }
-
-  .about-content{
-    height: 30vh;
-  }
-
-  .about-content p{
-    font-size: 21px;
-    line-height: 42px;
-  }
-
-  .Resume-section{
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-
-  .card{
-    width: 220px;
-  }
-  .card ul li svg {
-    width: 37px;
- }
-.profile-photo img {
-  right: 60px;
-  height: 440px;
-  width: auto;
-  bottom: -75px;
-  }
-  .portfolio-section{
-    height: 30vh;
-   }
-  
-   .footer-links{
-    padding: 40px;
-   }
+  padding: 1rem;
 }
-
-@media screen and (min-width: 901px) and (max-width: 991px){
-  .main-heading{
-    font-size: 90px;
-    line-height: 80px;
-  }
-
-  .lp-video{
-    height: 50px;
-  }
-
-  .lp-video video {
-    height: 280%;
-    width: auto;
-  }
-
-  .subheading{
-    font-size: 12px;
-  }
-  .badges{
-    margin-top: 10px;
-  }
-  .badge{
-    padding: 7px 3px;
-  }
-
-  .hero-image{
-    height: 40vh;
-  }
-
-  .about-section{
-    height: 50vh;
-  }
-  .about-content{
-    height: 30vh;
-  }
-
-  .about-content p{
-    font-size: 19px;
-    line-height: 43px;
-  }
-
-  .Resume-section{
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
-
-  .card{
-    width: 200px;
-  }
-  .contact p a {
-    font-size: 13px;
-    font-weight: 500;
- }
-.profile-photo img {
-  right: 60px;
-  height: 440px;
-  width: auto;
-  bottom: -75px;
-  }
-  .card ul li svg {
-    width: 34px;
-  }
-  .portfolio-section{
-    height: 30vh;
-   }
-  
-   .footer-links{
-    padding: 40px;
-   }
+.portfolio-section h1{
+  font-size: 45px;
+}
+.footer{
+  height: 17vh;
+}
 }
