@@ -665,3 +665,623 @@
   height: 17vh;
 }
 }
+
+ @media (min-width: 372px) and (max-width: 479px){
+.navbar{
+  padding: 1rem;
+  gap: 1rem;
+}
+.name{
+  font-size: 15px;
+}
+.nav-links{
+  gap: 0.5rem;
+}
+.nav-links a{
+  font-size: 15px;
+}
+.hero {
+  padding: 1rem;
+}
+.hero-text{
+  padding: 0;
+  flex-direction: column;
+}
+.main-heading{
+    margin:  1rem;;
+  font-size: 60px;
+  line-height: 50px;
+}
+.lp-video {
+  height: 100px;
+}
+.lp-video video {
+    height: 150%;
+  }
+.subheading {
+  text-align: left;
+  font-size: 1rem;
+}
+.badges{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.badge{
+   padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+}
+.hero-image{
+  height: 50vh;
+}
+.hero-image img {
+    width: 80%;
+  }
+.arrow-circle{
+  width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+}
+.arrow-circle svg {
+  margin-top: 5px;
+  width: 20px;
+}
+.about-section{
+  height: 90vh;
+  padding: 1rem;
+}
+.about-text span{
+  font-size: 45px;
+}
+.about-content{
+  padding: 1rem;
+  top: 30px;
+}
+.about-content p{
+  font-size: 1rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.img {
+  display: none;
+}
+.fst-paragraph, .snd-paragraph{
+  width: 100%;
+}
+.highlight{
+  height: 15px;
+  width: 15px;
+}
+.highlight svg {
+  margin-bottom: 7px;
+    height: auto;
+    width: 15px;
+}
+.container{
+  padding: 1rem;
+}
+.intro{
+  margin-bottom: 1rem;
+}
+.intro h1{
+  font-size: 45px;
+}
+.intro span {
+  font-size: 45px;
+  margin-left: -15px;
+}
+.Resume-section{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.left-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.card{
+  width: 280px;
+  padding: 1rem;
+}
+.card ul li svg{
+  width: 32px;
+}
+.profile-photo, .profile-photo img{
+  width: 360px;
+}
+.right-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.contact p a{
+  font-size: 0.7rem;
+    font-weight: 800;
+}
+.social-icons a svg{
+  width: 50px;
+}
+.download-btn{
+      padding: 10px 20px;
+}
+.portfolio-section{
+  padding: 1rem;
+}
+.portfolio-section h1{
+  font-size: 45px;
+}
+.footer{
+  height: 17vh;
+}
+ }
+@media (min-width: 480px) and (max-width: 599px){
+  .navbar{
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+.name{
+  font-size:20px;
+}
+.nav-links{
+  gap: 0.5rem;
+}
+.nav-links a{
+  font-size: 20px;
+}
+.hero {
+  padding: 1rem;
+}
+.hero-text{
+  padding: 0;
+  flex-direction: column;
+}
+.main-heading{
+    margin:  1rem;;
+  font-size: 80px;
+  line-height: 70px;
+}
+.lp-video {
+  height: 140px;
+}
+.lp-video video {
+    height: 150%;
+  }
+.subheading {
+  text-align: left;
+  font-size: 1.3rem;
+}
+.badges{
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.badge{
+  padding: 1rem 2.1rem;
+   font-size: 1rem;
+}
+.hero-image{
+  height: 60vh;
+}
+.hero-image img {
+    width: 90%;
+  }
+.arrow-circle{
+  width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+}
+.arrow-circle svg {
+  margin-top: 3px;
+  width: 30px;
+}
+.about-section{
+  height: 60vh;
+  padding: 1rem;
+}
+.about-text span{
+  font-size: 60px;
+}
+.about-content{
+  height: 40vh;
+  padding: 1rem;
+  top: 30px;
+}
+.about-content p{
+  font-size: 1rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.img {
+  display: none;
+}
+.fst-paragraph, .snd-paragraph{
+  width: 100%;
+}
+.highlight{
+  height: 15px;
+  width: 15px;
+}
+.highlight svg {
+  margin-bottom: 7px;
+    height: auto;
+    width: 15px;
+}
+.container{
+  padding: 1rem;
+}
+.intro{
+  margin-bottom: 1rem;
+}
+.intro h1{
+  font-size: 60px;
+}
+.intro span {
+  font-size: 60px;
+  margin-left: -15px;
+}
+.Resume-section{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.left-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.card{
+  width: 380px;
+  padding: 1rem;
+}
+.card p {
+    font-size: 20px;
+  }
+.card h2{
+  font-size: 30px;
+}
+.card ul li{
+  font-size: 20px;
+}
+.card ul li svg{
+  width: 68px;
+}
+.profile-photo, .profile-photo img{
+  width: 448px;
+}
+.right-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.contact p a{
+  font-size: 1.2rem;
+    font-weight: 500;
+    color: #000004;
+}
+.social-icons a svg{
+  width: 50px;
+}
+.download-btn{
+      padding: 20px 100px;
+}
+.portfolio-section{
+  padding: 1rem;
+}
+.portfolio-section h1{
+  font-size: 80px;
+}
+.footer{
+  height: 11vh;
+}
+}
+
+@media (min-width: 600px) and (max-width: 767px){
+  .navbar{
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+.name{
+  font-size:20px;
+}
+.nav-links{
+  gap: 0.5rem;
+}
+.nav-links a{
+  font-size: 20px;
+}
+.hero {
+  padding: 1rem;
+}
+.hero-text{
+  padding: 0;
+  flex-direction: column;
+}
+.main-heading{
+    margin:  1rem;;
+  font-size: 80px;
+  line-height: 70px;
+}
+.lp-video {
+  height: 170px;
+}
+.lp-video video {
+    height: 150%;
+  }
+.subheading {
+  text-align: left;
+  font-size: 1.3rem;
+}
+.badges{
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.badge{
+  padding: 1rem 2.1rem;
+   font-size: 1rem;
+}
+.hero-image{
+  height: 60vh;
+}
+.hero-image img {
+    width: 90%;
+  }
+.arrow-circle{
+  width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+}
+.arrow-circle svg {
+  margin-top: 3px;
+  width: 30px;
+}
+.about-section{
+  height: 60vh;
+  padding: 1rem;
+}
+.about-text span{
+  font-size: 80px;
+}
+.about-content{
+  height: 40vh;
+  padding: 1rem;
+  top: 30px;
+}
+.about-content p{
+  font-size: 1.4rem;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+.img {
+  display: none;
+}
+.fst-paragraph, .snd-paragraph{
+  width: 100%;
+}
+.highlight{
+  display: none;
+}
+.container{
+  padding: 1rem;
+}
+.intro{
+  margin-bottom: 1rem;
+}
+.intro h1{
+  font-size: 80px;
+}
+.intro span {
+  font-size: 60px;
+  margin-left: -15px;
+}
+.Resume-section{
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.left-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.card{
+  width: 500px;
+  padding: 1rem;
+}
+.card p {
+    font-size: 25px;
+  }
+.card h2{
+  font-size: 40px;
+}
+.card ul li{
+  font-size: 25px;
+  line-height: 25px;
+}
+.card ul li svg{
+  width: 90px;
+}
+.profile-photo, .profile-photo img{
+  width: 568px;
+}
+.right-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.contact p strong {
+  font-size: 40px;
+  line-height: 40px;
+}
+.contact p a{
+  font-size: 1.7rem;
+    font-weight: 500;
+    color: #000004;
+}
+.social-icons a svg{
+  width: 60px;
+  height: auto;
+}
+.download-btn{
+  font-size: 25px;
+      padding: 20px 130px;
+}
+.portfolio-section{
+  padding: 1rem;
+}
+.portfolio-section h1{
+  font-size: 90px;
+}
+.footer{
+  height: 11vh;
+}
+}
+@media (min-width: 768px) and (max-width: 900px){
+.navbar{
+  padding: 2rem;
+  gap: 2rem;
+}
+.name{
+  font-size:30px;
+}
+.nav-links{
+  gap: 0.5rem;
+}
+.nav-links a{
+  font-size: 30px;
+}
+.hero {
+  padding: 1rem;
+}
+.hero-text{
+  padding: 0;
+  flex-direction: column;
+}
+.main-heading{
+    margin:  2rem;;
+  font-size: 130px;
+  line-height: 110px;
+}
+.lp-video {
+  height: 200px;
+}
+.lp-video video {
+    height: 170%;
+  }
+.subheading {
+  text-align: left;
+  font-size: 30px;
+}
+.badges{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.badge{
+  padding: 1rem 2rem;
+   font-size: 30px;
+}
+.hero-image{
+  height: 60vh;
+}
+.hero-image img {
+    width: 80%;
+  }
+.arrow-circle{
+  width: 90px;
+    height: 90px;
+    top: 20px;
+    right: 20px;
+}
+.arrow-circle svg {
+  margin-top: 3px;
+  width: 45px;
+}
+.about-section{
+  height: 60vh;
+  padding: 1rem;
+}
+.about-text span{
+  font-size: 100px;
+}
+.about-content{
+  height: 40vh;
+  padding: 1rem;
+  top: 30px;
+}
+.about-content p{
+  font-size: 29px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.img {
+  display: none;
+}
+.fst-paragraph, .snd-paragraph{
+  width: 100%;
+}
+.highlight{
+ display: none;
+}
+.container{
+  padding: 2rem;
+}
+.intro{
+  margin-bottom: 1rem;
+}
+.intro h1{
+  font-size: 100px;
+}
+.intro span {
+  font-size: 100px;
+  margin-left: -15px;
+}
+.Resume-section{
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+.left-panel{
+  padding: 2rem;
+  justify-items: baseline;
+}
+.card{
+  width: 580px;
+  padding: 2rem;
+}
+.card p {
+    font-size: 30px;
+  }
+.card h2{
+  font-size: 45px;
+}
+.card ul li{
+  font-size: 30px;
+  line-height: 30px;
+}
+.card ul li svg{
+  width: 110px;
+}
+.profile-photo, .profile-photo img{
+  width: 704px;
+}
+.right-panel{
+  padding: 1rem;
+  justify-items: baseline;
+}
+.contact p strong{
+  font-size: 45px;
+  line-height: 45px;
+}
+.contact p a{
+  font-size: 30px;
+    font-weight: 500;
+    color: #000004;
+}
+.social-icons a svg{
+  width: 90px;
+  height: auto;
+}
+.download-btn{
+  font-size: 30px;
+      padding: 20px 150px;
+}
+.portfolio-section{
+  padding: 1rem;
+}
+.portfolio-section h1{
+  font-size: 80px;
+}
+.footer{
+  height: 11vh;
+}
+.footer-links a{
+    font-size: 30px;
+}
+}
