@@ -7,51 +7,53 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="icon" type="image/x-icon" href="Images/sparkles.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
 </head> 
 <body>
     <nav class="navbar">
-        <h1 class="name">Jegadheswaran M</h1>
-        <div class="nav-links">
-            <a href="#about">About Me</a>
-            <a href="#resume">Resume</a>
+        <h1 class="name" data-aos="fade-up" data-aos-duration="500">Jegadheswaran M</h1>
+        <div class="nav-links" data-aos="fade-up">
+            <a href="#about" id="aboutLink">About Me</a>
+            <a href="#resume" id="resumeLink">Resume</a>
         </div>
     </nav>
     <section class="hero" id="section1">
         <div class="hero-text">
-          <h1 class="main-heading">Jegadhes<br>waran</h1>
+          <h1 class="main-heading"data-aos="fade-up-right" data-aos-duration="500">Jegadhes<br>waran</h1>
           <div class="rt-container">
-            <div class="lp-video">
+            <div class="lp-video"data-aos="fade-up-left" data-aos-duration="1000">
               <video autoplay muted loop>
                 <source src="Videos/7020050_Abstract_Background_1920x1080.mp4" type="video/mp4">
               </video>
             </div>
-          <p class="subheading">
+          <p class="subheading" data-aos="fade-up-left" data-aos-duration="1000">
             The art of visual communication, creatively impacting the world around us—one good design at a time, design like you mean it!
           </p>
           <div class="badges">
-            <span class="badge">2022 Best Agency</span>
-            <span class="badge">World Class Agency</span>
+            <span class="badge" data-aos="fade-up-left" data-aos-duration="1000">2022 Best Agency</span>
+            <span class="badge" data-aos="fade-up-left" data-aos-duration="1000">World Class Agency</span>
           </div>
         </div>
         </div>
-        <div class="hero-image">
-          <img src="Images/Picsart_25-03-17_22-12-03-236.png" alt="Creative Design">
-          <div class="arrow-circle">
+        <div class="hero-image" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+          <img src="Images/Picsart_25-03-17_22-12-03-236.png" alt="Creative Design" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
+          <div class="arrow-circle" data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="250">
             <span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span>
           </div>
         </div>
       </section>
-      <section class="about-section" id="section2">
+      <section class="about-section" id="about">
         <div class="about-text">
-              <span class="about-text-content">About Me</span>
-              <span class="dot">.</span>
+              <span class="about-text-content" data-aos="fade-up-right" data-aos-duration="500" data-aos-offset="200">About Me</span>
+              <span class="dot" data-aos="fade-up-right" data-aos-duration="500" data-aos-offset="200">.</span>
           </div>
-          <div class="about-content">
-            <p class="fst-paragraph">
+          <div class="about-content" data-aos="fade-up"data-aos-offset="250" data-aos-easing="ease-in-sine">
+            <p class="fst-paragraph" data-aos="fade-up"data-aos-offset="100" data-aos-easing="ease-in-sine">
               CREATIVE AND<span class="img img1"><video src="Videos/6917978_Motion Graphics_Motion Graphic_1920x1080.mp4" autoplay muted loop></video></span> DETAIL-ORIENTED <br>
               GRAPHIC DESIGNER WITH <span class="img img2"> <video src="Videos/0_Abstract_Background_1920x1080.mp4" autoplay muted loop></video></span> 1 YEAR OF EXPERIENCE<br>
             </p>
-            <p class="snd-paragraph">
+            <p class="snd-paragraph" data-aos="fade-up"data-aos-offset="300" data-aos-easing="ease-in-sine">
               SKILLED <span class="highlight">
                 <span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000004"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#000004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></span>
               </span> IN CREATIVE SUITE, HTML, CSS, UI/UX <br>
@@ -62,10 +64,10 @@
       </section>
       <div class="container">
         <header class="intro">
-            <h1>Resume <span class="dot">.</span></h1>
+            <h1 data-aos="fade-up-right"data-aos-offset="200">Resume <span class="dot" data-aos="fade-up-right" data-aos-offset="200">.</span></h1>
         </header>
-      <section class="Resume-section"id="section3" >
-        <div class="left-panel">
+      <section class="Resume-section"id="resume" data-aos="fade-up"data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="left-panel" data-aos="flip-left"data-aos-offset="350" data-aos-easing="ease-in-sine">
           <div class="card">
               <h2>Education</h2>
               <p>Scott Christien College<br>(2018-2022)<br>B.Com</p>
@@ -92,10 +94,10 @@
 
       <div class="profile-photo">
          <img class="colorwheel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Colorwheel.svg/2048px-Colorwheel.svg.png" alt="">
-          <img class="pfp" src="Images/Picsart_25-04-11_12-14-41-369.png" alt="JD">
+          <img class="pfp" src="Images/Picsart_25-04-11_12-14-41-369.png" alt="JD" data-aos="zoom-out-down"data-aos-offset="400" data-aos-easing="ease-in-sine">
       </div>
 
-      <div class="right-panel">
+      <div class="right-panel"data-aos="flip-right"data-aos-offset="450" data-aos-easing="ease-in-sine">
         <div class="card contact">
           <p><strong>Birth:</strong> 22/02/2002</p>
           <p><strong>Location:</strong> Chennai</p>
@@ -118,7 +120,7 @@
       </div>
       </section>
       </div>
-      <section class="portfolio-section" id="section4">
+      <section class="portfolio-section" id="section4"  data-aos="fade-up"data-aos-offset="150" data-aos-easing="ease-in-sine">
         <h1>Thank You</h1>
       </section>
       <section class="footer">
@@ -128,5 +130,9 @@
       </div>
       </section>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

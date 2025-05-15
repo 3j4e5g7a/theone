@@ -196,13 +196,7 @@
   width: -webkit-fill-available;
   height: 87vh;
   background-color: #000004;
-  opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
-}
-.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .about-text{
@@ -294,15 +288,6 @@
   height: auto;
   width: 60%;
 }
-.Resume-section{
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
-}
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .container {
   background-image: linear-gradient(to right, #ffffff, #dbdbdb);
@@ -321,6 +306,7 @@
   font-weight: 600;
   font-size: 100px;
   color: #000004;
+  padding-top: 2rem;
 }
 
 .intro span{
@@ -483,7 +469,6 @@
   padding: 2rem;
   height: 50vh;
   width: auto;
-  opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
