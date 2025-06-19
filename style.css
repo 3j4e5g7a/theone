@@ -400,7 +400,30 @@
   line-height: 20px;
 }
 .card ul li svg{
+  transition: all 0.3s ease-in-out 0.1s;
   width: 50px;
+}
+.card ul li svg{
+  transition: all 0.3s ease-in-out 0.1s;
+  width: 50px;
+}
+
+.card ul li svg:hover{
+  animation: bouncing 0.5s ease-out 0.3s forwards;;
+}
+@keyframes bouncing {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 .contact a {
   color: #333;
@@ -635,6 +658,41 @@
     display: flex;
     flex-direction: column;
   }
+  .aboutLink, .resumeLink, .portfolioLink {
+  position: relative;
+  color: #dbfe01;
+  font-family: angie-sans, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  &:hover {
+    .link__graphic--scribble path {
+      transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .link__graphic--stroke path {
+      stroke-dashoffset: 0;
+    }
+  }
+  .link__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+  }
+  .link__graphic--scribble {
+    top: 100%;
+    path {
+      transition: stroke-dashoffset 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+  }
+  .link__graphic--stroke path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
+}
+
 
   .footer-links{
    padding: 20px;
