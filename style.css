@@ -527,9 +527,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .arrow-circle-01 svg{
+    transition: transform 0.3s ease;
   width: 50px;
 }
 
@@ -539,14 +541,11 @@
   transition: transform 0.3s ease;
 }
 
-.arrow-point:hover {
-  animation: bounceUp 0.6s infinite;
+.arrow-circle-01:hover {
+ transform: translate(10px, -10px); 
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes bounceUp {
-  0%   { transform: translateY(5px); }
-  100% { transform: translatex(5px); }
-}
 .card-container {
   display: flex;
   flex-direction: row;
