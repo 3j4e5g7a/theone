@@ -489,7 +489,7 @@
   align-content: center;
   background-color: #ccff00;
   padding: 2rem;
-  height: 100vh;
+  height: max-content;
   width: auto;
   transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
@@ -651,7 +651,7 @@
         position: relative;
     z-index: 1;
     margin-top: -250px;
-    height: 40vh;
+    height: max-content;
     background-color: #000004;
     overflow: hidden;
     display: flex;
@@ -728,13 +728,13 @@
   gap: 1rem;
 }
 .name{
-  font-size: 12px;
+  font-size: 10px;
 }
 .nav-links{
   gap: 0.5rem;
 }
 .nav-links a{
-  font-size: 12px;
+  font-size: 10px;
 }
 .hero {
   padding: 1rem;
@@ -784,7 +784,6 @@
 .about-section{
   height: 90vh;
   padding: 1rem;
-  margin-top: -50px;
 }
 .about-text span{
   font-size: 45px;
@@ -820,7 +819,6 @@
 }
 .intro h1{
   font-size: 45px;
-  padding-top: 3rem;
 }
 .intro span {
   font-size: 45px;
@@ -857,14 +855,43 @@
 .download-btn{
       padding: 10px 20px;
 }
+.arrow-circle-01{
+  width: 40px;
+  height: 40px;
+}
+
+.arrow-circle-01 svg{
+  width: 25px;
+}
+.card-container{
+  padding: 60px 0px;
+}
 .portfolio-section{
   padding: 1rem;
 }
 .portfolio-section h1{
   font-size: 45px;
 }
+.porfolio-text-content{
+  font-size: 45px;
+}
+.card-ux, .card-interaction, .card-systems{
+  width: 150px;
+  padding: 100px;
+}
 .footer{
-  height: 17vh;
+  height: 28vh;
+  margin-top: 0;
+}
+.footer-links{
+  gap: 20px;
+}
+.footer-links a{
+  font-size: 15px;
+}
+.greetings{
+  font-size: 45px;
+  top:-5px
 }
 }
 
@@ -874,13 +901,13 @@
   gap: 1rem;
 }
 .name{
-  font-size: 15px;
+  font-size: 12px;
 }
 .nav-links{
   gap: 0.5rem;
 }
 .nav-links a{
-  font-size: 15px;
+  font-size: 12px;
 }
 .hero {
   padding: 1rem;
@@ -931,7 +958,6 @@
 .about-section{
   height: 80vh;
   padding: 1rem;
-  margin-top: -50px;
 }
 .about-text span{
   font-size: 45px;
@@ -1006,14 +1032,50 @@
 .download-btn{
       padding: 10px 20px;
 }
+.arrow-circle-01{
+  width: 40px;
+  height: 40px;
+}
+
+.arrow-circle-01 svg{
+  width: 25px;
+}
+.card-container{
+  padding: 30px 0px;
+}
 .portfolio-section{
-  padding: 1rem;
+  padding: 20px;
 }
 .portfolio-section h1{
   font-size: 45px;
 }
+.porfolio-text-content{
+  font-size: 45px;
+}
+.card-ux, .card-interaction, .card-systems{
+  width: 80px;
+  padding: 100px;
+}
+.card-ux:hover,
+.card-interaction:hover,
+.card-systems:hover {
+  transform: translateY(-20px);  
+  transition: transform 0.3s ease;
+}
+
 .footer{
-  height: 17vh;
+  height: 20vh;
+    margin-top: -74px;
+}
+.footer-links{
+  gap: 20px;
+}
+.footer-links a{
+  font-size: 15px;
+}
+.greetings{
+  font-size: 45px;
+  top:-5px
 }
  }
 @media (min-width: 480px) and (max-width: 599px){
@@ -1022,13 +1084,13 @@
   gap: 1.5rem;
 }
 .name{
-  font-size:20px;
+  font-size:16px;
 }
 .nav-links{
   gap: 0.5rem;
 }
 .nav-links a{
-  font-size: 20px;
+  font-size: 16px;
 }
 .hero {
   padding: 1rem;
@@ -1079,7 +1141,6 @@
 .about-section{
   height: 70vh;
   padding: 1rem;
-  margin-top: -50px;
 }
 .about-text span{
   font-size: 60px;
@@ -1117,7 +1178,6 @@
 }
 .intro h1{
   font-size: 60px;
-      padding-top: 3rem;
 }
 .intro span {
   font-size: 60px;
@@ -1166,12 +1226,47 @@
 }
 .portfolio-section{
   padding: 1rem;
+  height: auto;
 }
 .portfolio-section h1{
   font-size: 80px;
 }
+
+.porfolio-text-content {
+    font-size: 60px;
+  }
+
+  .arrow-circle-01 svg {
+    width: 30px;
+  }
+
+  .arrow-circle-01 {
+    width: 50px;
+    height: 50px;
+        right: 10px;
+  }
+  .card-container{
+    padding: 40px;
+  }
+
+  .card-ux, .card-interaction, .card-systems{
+  width: 300px;
+  padding: 100px 20px;
+}
+.card-ux:hover,
+.card-interaction:hover,
+.card-systems:hover {
+  transform: translateY(-20px);  
+  transition: transform 0.3s ease;
+}
 .footer{
-  height: 11vh;
+  height: 20vh;
+  
+    margin-top: -120px;
+}
+.greetings{
+  font-size: 60px;
+
 }
 }
 
@@ -1238,7 +1333,6 @@
 .about-section{
   height: 60vh;
   padding: 1rem;
-  margin-top: -50px;
 }
 .about-text span{
   font-size: 80px;
@@ -1270,7 +1364,6 @@
 }
 .intro h1{
   font-size: 80px;
-  margin-top: 3rem;
 }
 .intro span {
   font-size: 60px;
@@ -1326,12 +1419,45 @@
 }
 .portfolio-section{
   padding: 1rem;
+  height: fit-content;
 }
 .portfolio-section h1{
   font-size: 90px;
 }
+.porfolio-text-content {
+    font-size: 80px;
+  }
+
+  .arrow-circle-01 svg {
+    width: 60px;
+  }
+
+  .arrow-circle-01 {
+    width: 80px;
+    height: 80px;
+        right: 20px;
+  }
+  .card-container{
+    padding: 40px;
+  }
+
+  .card-ux, .card-interaction, .card-systems{
+ width: 350px;
+        padding: 150px 50px;
+}
+.card-ux:hover,
+.card-interaction:hover,
+.card-systems:hover {
+  transform: translateY(-20px);  
+  transition: transform 0.3s ease;
+}
 .footer{
-  height: 11vh;
+height: 18vh;
+        margin-top: -130px;
+}
+.greetings{
+  font-size: 80px;
+
 }
 }
 @media (min-width: 768px) and (max-width: 900px){
@@ -1397,7 +1523,6 @@
 .about-section{
   height: 60vh;
   padding: 1rem;
-  margin-top: -50px;
 }
 .about-text span{
   font-size: 100px;
@@ -1484,12 +1609,42 @@
 }
 .portfolio-section{
   padding: 1rem;
+  height: fit-content;
 }
 .portfolio-section h1{
-  font-size: 80px;
+  font-size: 90px;
+}
+.porfolio-text-content {
+    font-size: 100px;
+  }
+
+  .arrow-circle-01 svg {
+    width: 80px;
+  }
+
+  .arrow-circle-01 {
+    width: 100px;
+    height: 100px;
+        right: 40px;
+  }
+
+  .card-ux, .card-interaction, .card-systems{
+ width: 350px;
+        padding: 150px 50px;
+}
+.card-ux:hover,
+.card-interaction:hover,
+.card-systems:hover {
+  transform: translateY(-20px);  
+  transition: transform 0.3s ease;
 }
 .footer{
-  height: 11vh;
+height: 18vh;
+        margin-top: -130px;
+}
+.greetings{
+  font-size: 100px;
+
 }
 .footer-links a{
     font-size: 30px;
@@ -1557,7 +1712,6 @@
   width: 45px;
 }
 .about-section{
-  margin-top: -50px;
   height: 60vh;
   padding: 1rem;
 }
@@ -1646,12 +1800,42 @@
 }
 .portfolio-section{
   padding: 1rem;
+  height: fit-content;
 }
 .portfolio-section h1{
-  font-size: 80px;
+  font-size: 90px;
+}
+.porfolio-text-content {
+    font-size: 100px;
+  }
+
+  .arrow-circle-01 svg {
+    width: 80px;
+  }
+
+  .arrow-circle-01 {
+    width: 100px;
+    height: 100px;
+        right: 40px;
+  }
+
+  .card-ux, .card-interaction, .card-systems{
+ width: 350px;
+        padding: 150px 50px;
+}
+.card-ux:hover,
+.card-interaction:hover,
+.card-systems:hover {
+  transform: translateY(-20px);  
+  transition: transform 0.3s ease;
 }
 .footer{
-  height: 11vh;
+height: 18vh;
+        margin-top: -130px;
+}
+.greetings{
+  font-size: 100px;
+
 }
 .footer-links a{
     font-size: 30px;
@@ -1808,12 +1992,42 @@
 }
 .portfolio-section{
   padding: 1rem;
+  height: fit-content;
 }
 .portfolio-section h1{
-  font-size: 100px;
+  font-size: 90px;
+}
+.porfolio-text-content {
+    font-size: 100px;
+  }
+
+  .arrow-circle-01 svg {
+    width: 80px;
+  }
+
+  .arrow-circle-01 {
+    width: 100px;
+    height: 100px;
+        right: 40px;
+  }
+
+  .card-ux, .card-interaction, .card-systems{
+ width: 350px;
+        padding: 150px 50px;
+}
+.card-ux:hover,
+.card-interaction:hover,
+.card-systems:hover {
+  transform: translateY(-20px);  
+  transition: transform 0.3s ease;
 }
 .footer{
-  height: 11vh;
+height: 18vh;
+        margin-top: -130px;
+}
+.greetings{
+  font-size: 100px;
+
 }
 .footer-links a{
     font-size: 30px;
