@@ -2191,52 +2191,109 @@ height: 18vh;
 }
 .footer-links a{
     font-size: 40px;
-}
-.footer{
-height: 18vh;
-        margin-top: -130px;
-}
-.greetings{
-  font-size: 140px;
-}
-
-    .porfolio-text-content {
-        font-size: 140px;
-    }
-}
-@media (min-width: 1440px) {
-  .Resume-section{
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  }
-  .container{
-    max-width: 100vw;
-  }
-  .lp-video video {
-    height: 230%;
-  }
-}
-
-@media (min-width: 1080px) and (max-width: 1920px){
-  .Resume-section{
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-  }
-  .container{
-    max-width: 100vw;
-  }
-  .lp-video video {
-    height: 230%;
-  }
-  .greetings{
-    font-size: 100px;
-  }
-  .card-container{
-    overflow-x: hidden;
-  }
-  .portfolio-section{
-    padding-bottom: 0px;
-  }
-  .footer{
-height: 18vh;
-        margin-top: -130px;
-}
-}
+diff --git a/style.css b/style.css
+index f9745ffb8f9e755fc9d48d526c4e8a8c605e9aa2..7f758b59480979b18d405f935055230b244c2df2 100644
+--- a/style.css
++++ b/style.css
+@@ -2194,49 +2194,90 @@ height: 18vh;
+ }
+ .footer{
+ height: 18vh;
+         margin-top: -130px;
+ }
+ .greetings{
+   font-size: 140px;
+ }
+ 
+     .porfolio-text-content {
+         font-size: 140px;
+     }
+ }
+ @media (min-width: 1440px) {
+   .Resume-section{
+     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+   }
+   .container{
+     max-width: 100vw;
+   }
+   .lp-video video {
+     height: 230%;
+   }
+ }
+ 
+-@media (min-width: 1080px) and (max-width: 1920px){
+-  .Resume-section{
+-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+-  }
+-  .container{
++@media (min-width: 1080px) and (max-width: 1920px){
++  .Resume-section{
++    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
++  }
++  .container{
+     max-width: 100vw;
+   }
+   .lp-video video {
+     height: 230%;
+   }
+   .greetings{
+     font-size: 100px;
+   }
+   .card-container{
+     overflow-x: hidden;
+   }
+   .portfolio-section{
+     padding-bottom: 0px;
+   }
+-  .footer{
+-height: 18vh;
+-        margin-top: -130px;
+-}
+-}
+\ No newline at end of file
++.footer{
++height: 18vh;
++        margin-top: -130px;
++}
++}
++
++@media (max-width: 900px) {
++  .navbar {
++    flex-wrap: wrap;
++    align-items: center;
++  }
++
++  .nav-links {
++    flex-wrap: wrap;
++    justify-content: flex-start;
++  }
++
++  .hero-image {
++    height: auto;
++    min-height: 320px;
++  }
++
++  .about-section,
++  .about-content {
++    height: auto;
++  }
++
++  .card,
++  .profile-photo,
++  .profile-photo img {
++    width: 100%;
++    max-width: 520px;
++  }
++
++  .footer {
++    margin-top: 0;
++  }
++}
++
++@media (max-width: 600px) {
++  .footer-links {
++    flex-wrap: wrap;
++    justify-content: flex-start;
++    gap: 1.5rem;
++  }
++}
